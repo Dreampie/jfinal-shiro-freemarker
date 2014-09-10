@@ -1,4 +1,4 @@
-jfinal-slf4j
+jfinal-shiro-freemarker
 ============
 
-jfinal  slf4j  log api
+jfinal  shiro plugin  freemarker tags
