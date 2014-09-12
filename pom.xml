@@ -8,6 +8,7 @@
   <artifactId>jfinal-shiro-freemarker</artifactId>
   <version>0.1</version>
   <packaging>jar</packaging>
+  <name>jfinal-shiro-freemarker</name>
   <description>jfinal shiro-freemarker plugins</description>
   <url>https://github.com/Dreampie/jfinal-shiro-freemarker</url>
 
