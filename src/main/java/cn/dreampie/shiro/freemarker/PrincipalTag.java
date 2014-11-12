@@ -40,7 +40,7 @@ public class PrincipalTag extends SecureTag {
    * The property name to retrieve of the principal, or null if the <tt>toString()</tt> value should be used.
    */
   String getProperty(Map params) {
-    return getParam(params, "property");
+    return getParam(params, "name");
   }
 
   @SuppressWarnings("unchecked")
