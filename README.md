@@ -1,7 +1,17 @@
 jfinal-shiro-freemarker
 ============
 
-jfinal  shiro plugin  freemarker tags
+jfinal  shiro plugin  freemarker tags，查看其他插件-> [Maven](http://search.maven.org/#search%7Cga%7C1%7Ccn.dreampie)
+
+maven 引用  ${jfinal-shiro-freemarker.version}替换为相应的版本如:0.2
+
+```xml
+<dependency>
+  <groupId>cn.dreampie</groupId>
+  <artifactId>jfinal-shiro-freemarker</artifactId>
+  <version>${jfinal-shiro-freemarker.version}</version>
+</dependency>
+```
 
 已经登陆判断
 ```html
