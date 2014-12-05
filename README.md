@@ -12,6 +12,13 @@ maven 引用  ${jfinal-shiro-freemarker.version}替换为相应的版本如:0.2
   <version>${jfinal-shiro-freemarker.version}</version>
 </dependency>
 ```
+在freemarker中使用
+```java
+
+FreeMarkerRender.getConfiguration().setSharedVariable("shiro", new ShiroTags());
+
+```
+
 
 已经登陆判断
 ```html
