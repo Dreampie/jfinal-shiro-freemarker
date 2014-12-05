@@ -1,6 +1,6 @@
 package cn.dreampie.shiro.freemarker;
 
-import cn.dreampie.shiro.model.User;
+import cn.dreampie.web.model.Model;
 import freemarker.core.Environment;
 import freemarker.log.Logger;
 import freemarker.template.TemplateDirectiveBody;
@@ -63,7 +63,7 @@ public class PrincipalTag extends SecureTag {
         String property = getProperty(params);
 
         if (property == null) {
-          result = ((User<?>) principal).get("full_name");
+          result = ((Model<?>) principal).get("full_name");
         } else {
           result = getPrincipalProperty(principal, property);
         }
@@ -110,8 +110,8 @@ public class PrincipalTag extends SecureTag {
 //                }
 //            }
       if (principal != null) {
-        User user = (User) principal;
-        if (user != null && user.get(property) != null) {
+        Model user = (Model) principal;
+        if (user.get(property) != null) {
           return String.valueOf(user.get(property));
         }
       }
